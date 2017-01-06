@@ -24,6 +24,7 @@ namespace RaDutySchedule.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
         public DbSet<Duty> Duties { get; set; }
+        public DbSet<ScheduledDuty> ScheduledDuties { get; set; }
 
     }
 }
