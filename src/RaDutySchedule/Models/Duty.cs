@@ -12,6 +12,7 @@ namespace RaDutySchedule.Models
         [Key]
         public string DutyID { get; set; }
         public DateTime DutyDate { get; set; }
+        public int Hours { get; set; }
 
      [ForeignKey("UserId")]
      public string aubgID { get; set; }

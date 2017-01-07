@@ -11,9 +11,11 @@ namespace RaDutySchedule.Models
         [Key]
         public int SchDutyID { get; set; }
        public  DayOfWeek Day { get; set; }
-       public  TimeSpan Time { get; set; }
+       public  TimeSpan StartTime { get; set; }
+       public TimeSpan EndTime { get; set; }
 
-       public string Name { get; set; }
+
+        public string Name { get; set; }
 
         
     }

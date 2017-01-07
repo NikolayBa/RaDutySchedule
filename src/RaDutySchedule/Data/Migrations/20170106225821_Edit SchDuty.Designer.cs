@@ -8,9 +8,10 @@ using RaDutySchedule.Data;
 namespace RaDutySchedule.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170106225821_Edit SchDuty")]
+    partial class EditSchDuty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -179,8 +180,6 @@ namespace RaDutySchedule.Data.Migrations
                     b.Property<string>("DutyID");
 
                     b.Property<DateTime>("DutyDate");
-
-                    b.Property<int>("Hours");
 
                     b.Property<string>("aubgID");
 
